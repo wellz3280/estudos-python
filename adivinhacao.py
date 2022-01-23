@@ -1,3 +1,4 @@
+# python parte modulo 7
 import random
 
 print("*********************************")
@@ -9,9 +10,22 @@ print("*********************************")
 # gerando numero aleatorio com a biblioteca random
 
 numero_secreto = round(random.randrange(1,101))
-total_de_tentativas = 3
-rodada = 1
-print(numero_secreto)
+total_de_tentativas = 0
+
+
+print("Qual nivél de dificuldade ?")
+print("(1) Fácil (2) Médio (3) Difícil ")
+
+nivel = int(input("Ecolha um nível"))
+
+if(nivel ==1):
+    total_de_tentativas = 20
+elif(nivel ==2):
+    total_de_tentativas = 10
+else:
+    total_de_tentativas = 5
+
+
 for rodada in range(1,total_de_tentativas + 1):
     print("Tentativa {} de {}".format(rodada,total_de_tentativas))
     chute = input("digite o seu numero: ")
@@ -37,5 +51,3 @@ for rodada in range(1,total_de_tentativas + 1):
             print("voce errou seu chute foi menor que o numero secreto")
     print("********************************")
 
-if(rodada == 3):
-    print("Game Over")

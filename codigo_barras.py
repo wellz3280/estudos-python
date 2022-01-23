@@ -12,3 +12,4 @@ if(escaneado_int == cod_ameixa):
     print("Produto {} R$ {:.2f}".format(produto,valor))
 else:
     print("Tente Novamente Por favor")
+

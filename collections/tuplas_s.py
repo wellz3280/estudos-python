@@ -23,8 +23,10 @@ conta_weliton.deposita(500)
 #
 conta_nicole = ContaCorrente(54211)
 conta_nicole.deposita(1000)
+
+
 # lista
-contas = [conta_weliton,conta_nicole]
+contas = (conta_weliton,conta_nicole)
 #
 for conta in contas:
     print(conta)

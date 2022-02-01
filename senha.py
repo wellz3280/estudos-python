@@ -1,4 +1,4 @@
-import getpass
+import getpass 
 
 class Senha:
     def __init__(self,email,senha):
@@ -17,5 +17,4 @@ print('******** Bem vinho Cliente +++++++++')
 usuario = input('Email: ')
 senha =getpass.getpass('senha: ')
 
-teste = Senha(usuario,senha)
-teste.verifica_informacoes()
+teste = Senha(usuario,senha).verifica_informacoes()

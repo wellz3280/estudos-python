@@ -8,12 +8,12 @@ class Senha:
     def verifica_informacoes(self):
         if(self._email == 'weliton@weliton.com'
         and self._senha == '123456'):
-            print('Bem vindo, pupunhalover')
+            print('logado com sucesso')
         else:
-            print('vaza caraio')
+            print('Usuario ou senha invalido')
 
 
-print('******** Bem vinho pupunhante +++++++++')
+print('******** Bem vinho Cliente +++++++++')
 usuario = input('Email: ')
 senha =getpass.getpass('senha: ')
 

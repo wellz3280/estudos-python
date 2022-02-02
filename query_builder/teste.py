@@ -1,5 +1,5 @@
 import mysql.connector
-from query_builder import QueryBuilder
+from inserir import Inserir
 from mysql.connector import Error
 from connect_mysql import Conexao
 
@@ -9,8 +9,8 @@ while(not continuar):
     nome = input("digite o nome no usuario: ").capitalize()
     email = input("Digite o email: ").lower()
     data = {"nome": nome, "email": email}
-    query = QueryBuilder('usuarios',data).get()
-    continuar_inserindo = input('Encerrar  (s) sim (n) não').upper()
+    query = Inserir('usuarios',data).get()
+    continuar_inserindo = input('Encerrar  (s) sim (n) não: ').upper()
 
     if(continuar_inserindo == 'S'):
         continuar = True

@@ -1,6 +1,13 @@
-from cpf import Cpf
+# fatiando string
+# fatia_um = self.cpf[:3]
+# fatia_dois = self.cpf[3:6]
+#fatia_tres = self.cpf[6:9]
+#fatia_quatro = self.cpf[9:]
 
-cpf = "1234567810"
-valida = Cpf(cpf)
+from cpf_cnpj import Documento
+# valida= Documento.cria_documento("40550000000180")
+valida= Documento.cria_documento("36529972803")
 
 print(valida)
+
+

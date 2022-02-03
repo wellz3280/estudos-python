@@ -4,7 +4,7 @@
 #fatia_tres = self.cpf[6:9]
 #fatia_quatro = self.cpf[9:]
 
-from cpf_cnpj import Documento
+from factory_documento import Documento
 # valida= Documento.cria_documento("40550000000180")
 valida= Documento.cria_documento("36529972803")
 

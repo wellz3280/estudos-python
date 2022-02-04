@@ -8,7 +8,7 @@ import re
 # from factory_documento import Documento
 # # valida= Documento.cria_documento("40550000000180")
 # valida= Documento.cria_documento("36529972803")
-#
+
 # print(valida)
 
 # padrao_email = '\w{5,50}@\w{3,10}.\w{2,3}.\w{2,3}'
@@ -16,10 +16,22 @@ import re
 # resposta = re.search(padrao_email,texto)
 # print(resposta.group())
 
-from telefones_br import TelefoneBr
+# from telefones_br import TelefoneBr
 
-telefone = "552126481234"
+# telefone = "552126481234"
 
-teste = TelefoneBr(telefone)
+# teste = TelefoneBr(telefone)
+# print(teste)
 
-print(teste)
+from datetime import datetime,timedelta
+from data_hora import DatasBr
+# cadastro = DatasBr()
+# print(cadastro)
+
+data = DatasBr()
+
+print(data.tempo_cadastro())
+
+# hoje = datetime.today()
+# amanha = datetime.today() + timedelta(days=1,hours=20)
+# print(hoje - amanha)

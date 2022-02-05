@@ -1,4 +1,5 @@
 import re
+import requests
 # fatiando string
 # fatia_um = self.cpf[:3]
 # fatia_dois = self.cpf[3:6]
